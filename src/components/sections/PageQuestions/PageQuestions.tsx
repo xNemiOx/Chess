@@ -18,7 +18,6 @@ const PageQuestions: React.FC<PageQuestionsProps> = () => {
 
     return (
         <Container>
-            {
                 <ContainerTitleText>
                     <PageQuestionsTitle>Frequently Asked Questions</PageQuestionsTitle>
 
@@ -26,7 +25,6 @@ const PageQuestions: React.FC<PageQuestionsProps> = () => {
                         <Spoiler {...spoilerData} key={title} />
                     ))}
                 </ContainerTitleText>
-            }
         </Container>
     );
 };
