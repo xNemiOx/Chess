@@ -162,6 +162,7 @@ export const DiagramText = styled.div`
 export const ContainerPageDiagram = styled.div`
     width: 100%;
     height: 1729px;
+    overflow: hidden;
 
     padding: 80px 65px;
 

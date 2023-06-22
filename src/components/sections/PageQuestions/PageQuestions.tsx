@@ -18,13 +18,13 @@ const PageQuestions: React.FC<PageQuestionsProps> = () => {
 
     return (
         <Container>
-                <ContainerTitleText>
-                    <PageQuestionsTitle>Frequently Asked Questions</PageQuestionsTitle>
+            <ContainerTitleText>
+                <PageQuestionsTitle>Frequently Asked Questions</PageQuestionsTitle>
 
-                    {data.map((spoilerData) => (
-                        <Spoiler {...spoilerData} key={title} />
-                    ))}
-                </ContainerTitleText>
+                {data.map((spoilerData) => (
+                    <Spoiler {...spoilerData} key={title} />
+                ))}
+            </ContainerTitleText>
         </Container>
     );
 };
