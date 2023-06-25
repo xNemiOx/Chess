@@ -35,8 +35,8 @@ const Header: React.FC<HeaderProps> = () => {
                 </ContainerNav>
 
                 <ContainerLogin>
-                    <HeaderNav>Login</HeaderNav>
-                    <HeaderButtonTryNow>Try now</HeaderButtonTryNow>
+                    <HeaderNav href="/Login">Login</HeaderNav>
+                    <HeaderButtonTryNow href="/Login">Try now</HeaderButtonTryNow>
                 </ContainerLogin>
             </ContainerHeader>
         </Container>

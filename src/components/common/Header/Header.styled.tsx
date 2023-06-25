@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { mediaBreakpointDown } from '@/style/mixins';
 import { color } from '@/style/mixins';
+import Link from 'next/link';
+import { link } from 'fs';
 
 export const Container = styled.div`
     position: fixed;
@@ -13,6 +15,9 @@ export const Container = styled.div`
 export const ContainerHeader = styled.header`
     display: flex;
     justify-content: space-evenly;
+
+    background-color: rgba(137, 115, 223, 0.3);
+    backdrop-filter: blur(5px) brightness(0.8) saturate(1.2);
 
     width: 1920px;
     padding: 40px 80px;
@@ -154,7 +159,14 @@ export const HeaderLogo = styled(Header)`
     }
 `;
 
-export const HeaderNav = styled(Header)`
+export const HeaderNav = styled.a`
+    letter-spacing: 0.02em;
+
+    margin-left: 50px;
+    white-space: nowrap;
+
+    color: ${color('white')};
+
     font-weight: 500;
     font-size: 20px;
     position: relative;
@@ -196,11 +208,13 @@ export const HeaderNav = styled(Header)`
     }
 `;
 
-export const HeaderButtonTryNow = styled.button`
+export const HeaderButtonTryNow = styled.a`
     font-weight: 500;
     font-size: 20px;
     font-style: normal;
     color: ${color('white')};
+
+    padding-top: 12px;
 
     margin-top: -8px;
     margin-left: 50px;

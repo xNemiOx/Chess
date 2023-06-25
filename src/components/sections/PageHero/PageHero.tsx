@@ -39,7 +39,7 @@ const PageHero: React.FC<PageHeroProps> = () => {
                     Aimchess helps chess players like you improve faster by combining unique anlytics with personalized lessons (created
                     from your games!) to make training fun and easy.
                 </PageHeroTitleText>
-                <PageHeroButtonTitle>Try now</PageHeroButtonTitle>
+                <PageHeroButtonTitle href="/Login">Try now</PageHeroButtonTitle>
             </ContainerTitleText>
         </Container>
     );

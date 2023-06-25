@@ -296,7 +296,7 @@ export const PageHeroTitleText = styled.div`
     }
 `;
 
-export const PageHeroButtonTitle = styled.button`
+export const PageHeroButtonTitle = styled.a`
     font-weight: 500;
     font-size: 20px;
     font-style: normal;
